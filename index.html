@@ -213,6 +213,26 @@
             color: #ffc107; /* Orange for not ready/needs more info */
         }
 
+        .ko-fi-button {
+            display: block;
+            width: fit-content; /* Make button fit its content */
+            margin: 40px auto 20px auto; /* Center it with spacing */
+            padding: 12px 25px;
+            background-color: #FF5E5B; /* Ko-fi's brand color */
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .ko-fi-button:hover {
+            background-color: #e55350; /* Slightly darker Ko-fi color */
+            transform: translateY(-2px);
+        }
+
 
         /* Responsive adjustments */
         @media (min-width: 768px) {
@@ -223,6 +243,9 @@
                 max-width: 800px; /* Limit width for better readability */
                 margin-left: auto;
                 margin-right: auto;
+            }
+            .ko-fi-button {
+                max-width: 300px; /* Limit width on larger screens */
             }
         }
     </style>
@@ -332,6 +355,11 @@
     <div id="journal-entries">
         <h2>Previous Entries</h2>
         </div>
+
+    <a href="https://ko-fi.com/rokh321836" target="_blank" class="ko-fi-button">
+        Support My Work on Ko-fi
+    </a>
+
 
     <script>
         const feedingForm = document.getElementById('feeding-form');
